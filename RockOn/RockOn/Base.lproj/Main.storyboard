@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RockOn" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main2" translatesAutoresizingMaskIntoConstraints="NO" id="RAs-gy-uC9">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="CUw-ir-G5R">
+                                <rect key="frame" x="45" y="154" width="285" height="331"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KiE-Yi-K6b">
+                                        <rect key="frame" x="0.0" y="0.0" width="285" height="64"/>
+                                        <state key="normal" image="sh"/>
+                                        <connections>
+                                            <action selector="shuffultapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BgK-Nv-Fum"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8V2-kG-CXM">
+                                        <rect key="frame" x="80" y="108" width="125" height="115"/>
+                                        <state key="normal" image="Untitled"/>
+                                        <connections>
+                                            <action selector="pauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gF-Bg-Tg2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLU-vS-sPC">
+                                        <rect key="frame" x="0.0" y="267" width="285" height="64"/>
+                                        <state key="normal" image="st"/>
+                                        <connections>
+                                            <action selector="stopTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pah-58-ewf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rock ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3JO-dt-QTk">
+                                <rect key="frame" x="80" y="54" width="178" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RAs-gy-uC9" secondAttribute="bottom" id="5Mb-rB-2oV"/>
+                            <constraint firstItem="RAs-gy-uC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CUc-aK-7XM"/>
+                            <constraint firstItem="RAs-gy-uC9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fig-09-7Av"/>
+                            <constraint firstItem="RAs-gy-uC9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SNk-mf-fie"/>
+                            <constraint firstItem="RAs-gy-uC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="dYC-W9-Whf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RAs-gy-uC9" secondAttribute="trailing" id="g9l-qA-CpC"/>
+                            <constraint firstItem="RAs-gy-uC9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="wsq-SM-XVM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="musicName" destination="3JO-dt-QTk" id="VWO-Yf-R9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Untitled" width="125" height="115"/>
+        <image name="main2" width="393" height="642"/>
+        <image name="sh" width="285" height="64"/>
+        <image name="st" width="285" height="64"/>
+    </resources>
+</document>
